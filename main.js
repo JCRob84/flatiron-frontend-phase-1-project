@@ -1,9 +1,9 @@
-console.log('main.js connected')
+console.log("main.js connected");
 
 const handleFormInputFocus = () => {
-    console.log(`focus occurred`)
-}
+  console.log(`focus occurred`);
+};
 
-const searchTermsInput = document.body.querySelector('#search-terms')
+const searchTermsInput = document.body.querySelector("#search-terms");
 
-searchTermsInput.addEventListener('focus', handleFormInputFocus)
+searchTermsInput.addEventListener("focus", handleFormInputFocus);
