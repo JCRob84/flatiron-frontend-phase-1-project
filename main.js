@@ -1,15 +1,23 @@
-function handleKeyPress(event) {
-    if (event.key === "Enter") {
-        alert{"Welcome to world info."}
-    }
+function handleCountryClick(event) {
+  const countryDiv = event.currentTarget;
+  countryDiv.classList.toggle("selected");
 }
 
-function handleCountryClick(event) {
-    const countryDiv = event.currentTarget;
-    countryDiv.classList.toggle("selected");
+function handleKeyPress(event) {
+  if (event.key === "Enter") {
+    alert("Welcome to world info!");
   }
+}
 
-document.addEventListener("keydown", handleKeyPress)
+document.addEventListener("DOMContentLoaded", () => {
+  const countryDivs = document.querySelectorAll(".country");
+
+  countryDivs.forEach((countryDiv) => {
+    countryDiv.addEventListener("click", handleCountryClick);
+  });
+
+  document.addEventListener("keydown", handleKeyPress);
+});
 
 const app = document.querySelector(".container");
 
@@ -50,6 +58,5 @@ fetch(url)
 
       app.appendChild(countryDiv);
     });
-  });
-
-  .catch((err) => console.log(err))
+  })
+  .catch((err) => console.log(err));
