@@ -20,5 +20,14 @@ fetch(url)
       const flagImg = document.createElement("img");
       flagImg.src = flagUrl;
       flagImg.alt = `${name} flag`;
+
+      const nameElement = document.createElement("p");
+      nameElement.textContent = `Country: ${name}`;
+
+      const populationElement = document.createElement("p");
+      populationElement.textContent = `Population: ${population}`;
+
+      const languagesElement = document.createElement("p");
+      languagesElement.textContent = `Languages: ${languages}`;
     });
   });
