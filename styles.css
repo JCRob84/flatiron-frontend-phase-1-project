@@ -18,3 +18,10 @@ body {
   background-color: rgb(186, 225, 212);
   box-shadow: 0px 0px 10px rgba(red, green, blue, alpha);
 }
+
+.country img {
+  max-width: 100px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
