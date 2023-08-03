@@ -29,5 +29,10 @@ fetch(url)
 
       const languagesElement = document.createElement("p");
       languagesElement.textContent = `Languages: ${languages}`;
+
+      countryDiv.appendChild(flagImg);
+      countryDiv.appendChild(nameElement);
+      countryDiv.appendChild(populationElement);
+      countryDiv.appendChild(languagesElement);
     });
   });
