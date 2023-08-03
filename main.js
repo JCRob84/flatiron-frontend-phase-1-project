@@ -34,5 +34,7 @@ fetch(url)
       countryDiv.appendChild(nameElement);
       countryDiv.appendChild(populationElement);
       countryDiv.appendChild(languagesElement);
+
+      app.appendChild(countryDiv);
     });
   });
