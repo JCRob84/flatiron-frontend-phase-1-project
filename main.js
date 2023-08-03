@@ -4,6 +4,13 @@ function handleKeyPress(event) {
     }
 }
 
+function handleCountryClick(event) {
+    const countryDiv = event.currentTarget;
+    countryDiv.classList.toggle("selected");
+  }
+
+document.addEventListener("keydown", handleKeyPress)
+
 const app = document.querySelector(".container");
 
 const url = "https://restcountries.com/v3.1/all";
