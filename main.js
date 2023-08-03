@@ -44,3 +44,5 @@ fetch(url)
       app.appendChild(countryDiv);
     });
   });
+
+  .catch((err) => console.log(err))
