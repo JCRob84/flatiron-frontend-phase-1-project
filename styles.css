@@ -4,3 +4,9 @@ body {
   background-position: center;
   background-attachment: fixed;
 }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
