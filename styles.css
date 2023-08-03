@@ -10,3 +10,11 @@ body {
   flex-wrap: wrap;
   gap: 20px;
 }
+
+.country {
+  border: 1px solid #655151;
+  padding: 10px;
+  width: 300px;
+  background-color: rgb(186, 225, 212);
+  box-shadow: 0px 0px 10px rgba(red, green, blue, alpha);
+}
