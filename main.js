@@ -13,5 +13,8 @@ fetch(url)
       const flagUrl = country.flags.png;
       const population = country.population;
       const languages = Object.values(country.languages).join(", ");
+
+      const countryDiv = document.createElement("div");
+      countryDiv.classList.add("country");
     });
   });
