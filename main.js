@@ -16,5 +16,9 @@ fetch(url)
 
       const countryDiv = document.createElement("div");
       countryDiv.classList.add("country");
+
+      const flagImg = document.createElement("img");
+      flagImg.src = flagUrl;
+      flagImg.alt = `${name} flag`;
     });
   });
