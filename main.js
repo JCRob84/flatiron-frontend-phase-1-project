@@ -22,4 +22,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const searchButton = document.getElementById("searchButton");
   const countriesContainer = document.querySelector(".countries-container");
 
+  searchButton.addEventListener("click", () => {
+    const searchTerm = searchInput.value.trim();
+    if (searchTerm !== "") {
+      fetch(`https://restcountries.com/v3.1/name/${searchTerm}`)
+        .then((res) => res.json())
+        .then((data) => {
+          countriesContainer.innerHTML = "";
+          data.forEach((country) => {
+            const countryDiv = document.createElement("div");
+            countryDiv.classList.add("country");
+            countryDiv.id = country.cca3;
 
+          
