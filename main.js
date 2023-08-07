@@ -62,6 +62,4 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch((err) => console.log(err));
     }
   });
-
-  // Resto del código...
 });
