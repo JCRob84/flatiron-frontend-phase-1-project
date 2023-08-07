@@ -32,3 +32,36 @@ body {
   text-decoration: solid;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.selected {
+  background-color: #f0f0f0; /* Cambia el color de fondo al seleccionar */
+  border: 2px solid #3498db; /* Agrega un borde alrededor del elemento seleccionado */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra suave al elemento */
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.search-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#searchButton {
+  margin-left: 10px;
+}
+
+h1 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #403a39;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
